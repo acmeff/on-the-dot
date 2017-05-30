@@ -6,11 +6,19 @@ body {
 }
 
 @keyframes clock{
-      100% {transform:rotate(90deg);}
+  100% {transform:rotate(90deg);}
 }
 
 @keyframes counter {
-    100% {transform:rotate(-90deg)}
+  100% {transform:rotate(-90deg)}
+}
+
+@keyframes vert {
+  100% {transform:rotateX(90deg);}
+}
+
+@keyframes horiz {
+  100% {transform:rotateY(90deg);}
 }
 
 button {
@@ -66,4 +74,16 @@ animation-fill-mode: forwards;
   animation-name: counter;
   animation-duration: .15s;
   animation-fill-mode: forwards;
+}
+
+.vert {
+  animation-name: vert;
+  animation-duration: .15s;
+  animation-fill-mode: forwards;
+}
+
+.horizontal {
+    animation-name: horiz;
+    animation-duration: .15s;
+    animation-fill-mode: forwards;
 }
