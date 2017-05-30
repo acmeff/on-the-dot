@@ -30,6 +30,7 @@ button {
   border-radius: 10px;
   margin: 5px;
   outline: none;
+  font-size: 20px;
 }
 
 button:hover{
@@ -86,4 +87,9 @@ animation-fill-mode: forwards;
     animation-name: horiz;
     animation-duration: .15s;
     animation-fill-mode: forwards;
+}
+
+#stack{
+  background: transparent;
+  border: 5px dotted white;
 }
