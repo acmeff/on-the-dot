@@ -52,13 +52,12 @@ button:hover{
   align-items: center;
 }
 
-#target-canvas{
-  height: 300px;
-  width: 300px;
+.clear-card canvas{
+  background-color: rgba(255,255,255,.4);
 }
+
 canvas {
-  background: white;
-  opacity: .8;
+  background-color: white;
   padding: 10px;
   border: 1px solid white;
   border-radius: 15px;
@@ -88,8 +87,18 @@ animation-fill-mode: forwards;
     animation-duration: .15s;
     animation-fill-mode: forwards;
 }
-/*
+
 #stack{
-  opacity: .4;
+  background-color: rgba(255,255,255,0.4);
   border: 5px dotted white;
-}*/
+}
+
+#target-canvas{
+  height: 300px;
+  width: 300px;
+  border: 5px solid gray;
+}
+
+#clear-stack{
+  width: 100px;
+}
