@@ -1,6 +1,69 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #004a80;
+}
 
+@keyframes clock{
+      100% {transform:rotate(90deg);}
+}
+
+@keyframes counter {
+    100% {transform:rotate(-90deg)}
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5px;
+  outline: none;
+}
+
+button:hover{
+  background-color: white;
+  color: #004a80;
+}
+
+.buttons{
+  display: flex;
+}
+
+.clear-cards{
+  display: flex;
+}
+
+.clear-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#target-canvas{
+  height: 300px;
+  width: 300px;
+}
 canvas {
-  background: transparent;
+  background: white;
+  opacity: .8;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid white;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.clock{
+animation-name: clock;
+animation-duration: .15s;
+animation-fill-mode: forwards;
+}
+
+.counter{
+  animation-name: counter;
+  animation-duration: .15s;
+  animation-fill-mode: forwards;
 }
