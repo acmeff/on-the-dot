@@ -88,8 +88,8 @@ animation-fill-mode: forwards;
     animation-duration: .15s;
     animation-fill-mode: forwards;
 }
-
+/*
 #stack{
-  background: transparent;
+  opacity: .4;
   border: 5px dotted white;
-}
+}*/
