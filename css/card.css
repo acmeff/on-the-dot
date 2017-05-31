@@ -42,7 +42,17 @@ button:hover{
   display: flex;
 }
 
+.stack-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .clear-cards{
+  display: flex;
+}
+
+.top-canvases{
   display: flex;
 }
 
@@ -88,15 +98,15 @@ animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
-#stack{
+/*#stack{
   background-color: rgba(255,255,255,0.4);
   border: 5px dotted white;
-}
+}*/
 
 #target-canvas{
   height: 300px;
   width: 300px;
-  border: 5px solid gray;
+  /*border: 5px solid gray;*/
   margin-left: 120px;
 }
 
