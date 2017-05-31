@@ -64,6 +64,11 @@ canvas {
   margin: 10px;
 }
 
+/*.stacked{
+  position: absolute;
+
+}*/
+
 .clock{
 animation-name: clock;
 animation-duration: .15s;
