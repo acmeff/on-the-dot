@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #004a80;
+  background-color: #002d4e;
 }
 
 @keyframes clock{
@@ -22,11 +22,11 @@ body {
 }
 
 button {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   background-color: transparent;
   color: white;
-  border: 1px solid white;
+  border: none;
   border-radius: 10px;
   margin: 5px;
   outline: none;
@@ -35,7 +35,7 @@ button {
 
 button:hover{
   background-color: white;
-  color: #004a80;
+  color: #002d4e;
 }
 
 .buttons{
@@ -97,6 +97,7 @@ animation-fill-mode: forwards;
   height: 300px;
   width: 300px;
   border: 5px solid gray;
+  margin-left: 120px;
 }
 
 #clear-stack{
