@@ -16,16 +16,24 @@
         <h2 id='total'>0</h2>
       </div>
     </header>
-    <section class='app'>
-      <h2 id='match' class='hidden'>Match</h2>
-      <h2 id='not-match' class='hidden'>Try Again</h2>
+      <section class='app'>
       <section class='top-canvases'>
         <div class='target-container'>
+          <h2 class='demo'>This is your pattern to match</h2>
           <canvas id='target-canvas'></canvas>
         </div>
-        <canvas id='stack' class='empty'></canvas>
+        <div class='match'>
+          <h2 id='match' class='hidden'>MATCH!</h2>
+          <h2 id='not-match' class='hidden'>Try Again</h2>
+          <h4>=</h4>
+        </div>
+        <div class='stack-container'>
+          <h2 class='demo'>This is where your cards will stack</h2>
+          <h4 id='qmark'>?</h4>
+          <canvas id='stack' class='empty'></canvas>
+        </div>
         <div class='stack-buttons'>
-          <button id='gen-stack'>Check</button>
+          <button id='gen-stack'>Check Solution</button>
           <button id='remove-top'>Remove Top Card</button>
           <button id='clear-stack'>Clear Stack</button>
         </div>
@@ -88,13 +96,17 @@
             </button>
           </div>
         </div>
+
       </section>
-      <h3 class='hidden rot-clock two label'>Rotate Clockwise</h3>
-      <h3 class='hidden rot-counter two label'>Rotate Counter-Clockwise</h3>
-      <h3 class='hidden up two label'>Flip Vertically</h3>
-      <h3 class='hidden side two label'>Flip Sideways</h3>
+      <h2 class='demo'>These are your cards</h2>
+      <h2 class='demo'>They are transparent, except for the dots</h2>
+      <h2 class='demo'>Flip, rotate, and add them to the stack</h2>
+      <h2 class='demo'>Stack them on top of each other to match the pattern</h2>
+      <h3 class='hidden rot-clock label'>Rotate Clockwise</h3>
+      <h3 class='hidden rot-counter label'>Rotate Counter-Clockwise</h3>
+      <h3 class='hidden up label'>Flip Vertically</h3>
+      <h3 class='hidden side label'>Flip Sideways</h3>
       <h3 class='hidden add label'>Add to Stack</h3>
     </section>
-
   </body>
 </html>

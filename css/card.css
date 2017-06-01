@@ -1,5 +1,16 @@
+html{
+  height: 100%;
+  background: linear-gradient(#597d98,#002d4e);
+  display: flex;
+  justify-content: center;
+}
+
 body {
-  background-color: #002d4e;
+  height: 100%;
+  margin: 0;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Istok Web", sans-serif;
   color: white;
 }
@@ -8,6 +19,8 @@ header{
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid white;
+  max-width: 1500px;
+  align-self: center;
 }
 
 header div{
@@ -15,8 +28,28 @@ header div{
   justify-content: space-between;
 }
 
-h1, h2{
+h1, h2, h3{
   margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+h4{
+  font-size: 50px;
+  text-align: center;
+}
+
+.demo{
+  position: fixed;
+  z-index: 1;
+}
+
+.top-canvases h2.demo{
+  top: 50px;
+}
+
+.app > h2.demo{
+  bottom: 0px;
 }
 
 #total{
@@ -28,25 +61,41 @@ h1, h2{
   display: none;
 }
 
+.hover{
+  background-color: white;
+  color: #002d4e;
+}
+
+.match{
+  position: relative;
+  width: 180px;
+}
+
+#qmark{
+  position: absolute;;
+  bottom: 100px;
+}
 
 #match{
   position: absolute;
-  top: 5px;
-  font-size: 50px;
-  margin: 10px;
+  top: 0px;
+  font-size: 42px;
+  right: 20px;
 }
 
 #not-match{
   position: absolute;
   top: 0px;
-  font-size: 50px;
+  font-size: 42px;
   margin: 10px;
+  width: 250px;
 }
 
 .app{
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1500px;
 }
 
 @keyframes clock{
@@ -138,6 +187,8 @@ button:hover + .label{
   width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
 
 .clear-card{
@@ -185,6 +236,13 @@ canvas {
   margin-top: 50px;
 }
 
+.stack-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #target-canvas{
   border-right: 1px solid white;
   margin-right: 80px;
@@ -198,7 +256,7 @@ canvas {
 }
 
 .full{
-  background-color: rgba(255, 225, 225, .4);
+  background-color: rgba(255, 225, 225, .2);
 }
 
 .empty {
