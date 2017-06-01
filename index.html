@@ -11,6 +11,8 @@
   <body>
     <header>
       <h1>On the Dot</h1>
+      <button class='demo-button hidden' id='skip'>Skip Demo</button>
+      <button class='demo-button hidden' id='replay'>Replay Demo</button>
       <div>
         <h2>Total matches: </h2>
         <h2 id='total'>0</h2>
@@ -25,6 +27,7 @@
         <div class='match'>
           <h2 id='match' class='hidden'>MATCH!</h2>
           <h2 id='not-match' class='hidden'>Try Again</h2>
+          <h2 id='your-turn' class='hidden demo'>Your Turn!</h2>
           <h4>=</h4>
         </div>
         <div class='stack-container'>
@@ -100,8 +103,7 @@
       </section>
       <h2 class='demo hidden' id='three'>These are your cards</h2>
       <h2 class='demo hidden' id='four'>They are transparent, except for the dots</h2>
-      <h2 class='demo hidden' id='five'>Flip, rotate, and add them to the stack</h2>
-      <h2 class='demo hidden' id='six'>Stack them on top of each other to match the pattern</h2>
+      <h2 class='demo hidden' id='five'>Flip, rotate, and stack them on top of each other to match the pattern</h2>
       <h3 class='hidden rot-clock label'>Rotate Clockwise</h3>
       <h3 class='hidden rot-counter label'>Rotate Counter-Clockwise</h3>
       <h3 class='hidden up label'>Flip Vertically</h3>

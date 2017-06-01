@@ -83,7 +83,7 @@ h4{
   right: 20px;
 }
 
-#not-match{
+#not-match, #your-turn{
   position: absolute;
   top: 0px;
   font-size: 42px;
@@ -128,8 +128,8 @@ h4{
 .appear {
   animation-fill-mode: forwards;
   animation-name: appear;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
 }
 
 button {
@@ -156,6 +156,12 @@ button:hover + .label{
 .buttons{
   display: flex;
   position: relative;
+}
+
+.demo-button{
+  width: 150px;
+  border: 1px solid white;
+  font-size: 18px;
 }
 
 .stack-buttons{
