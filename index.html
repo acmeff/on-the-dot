@@ -19,7 +19,7 @@
       <section class='app'>
       <section class='top-canvases'>
         <div class='target-container'>
-          <h2 class='demo'>This is your pattern to match</h2>
+          <h2 class='demo hidden' id='one'>This is your pattern to match</h2>
           <canvas id='target-canvas'></canvas>
         </div>
         <div class='match'>
@@ -28,7 +28,7 @@
           <h4>=</h4>
         </div>
         <div class='stack-container'>
-          <h2 class='demo'>This is where your cards will stack</h2>
+          <h2 class='demo hidden' id='two'>This is where your cards will stack</h2>
           <h4 id='qmark'>?</h4>
           <canvas id='stack' class='empty'></canvas>
         </div>
@@ -98,10 +98,10 @@
         </div>
 
       </section>
-      <h2 class='demo'>These are your cards</h2>
-      <h2 class='demo'>They are transparent, except for the dots</h2>
-      <h2 class='demo'>Flip, rotate, and add them to the stack</h2>
-      <h2 class='demo'>Stack them on top of each other to match the pattern</h2>
+      <h2 class='demo hidden' id='three'>These are your cards</h2>
+      <h2 class='demo hidden' id='four'>They are transparent, except for the dots</h2>
+      <h2 class='demo hidden' id='five'>Flip, rotate, and add them to the stack</h2>
+      <h2 class='demo hidden' id='six'>Stack them on top of each other to match the pattern</h2>
       <h3 class='hidden rot-clock label'>Rotate Clockwise</h3>
       <h3 class='hidden rot-counter label'>Rotate Counter-Clockwise</h3>
       <h3 class='hidden up label'>Flip Vertically</h3>
