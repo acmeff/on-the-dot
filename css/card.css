@@ -5,8 +5,14 @@ body {
 }
 
 .hidden{
-  visibility: hidden;
+  display: none;
 }
+
+.label{
+  /*position: absolute;
+  bottom: 0px;*/
+}
+
 
 #match{
   position: absolute;
@@ -79,8 +85,13 @@ button:hover{
   color: #002d4e;
 }
 
+button:hover + .label{
+  display: block;
+}
+
 .buttons{
   display: flex;
+  position: relative;
 }
 
 .stack-buttons{
