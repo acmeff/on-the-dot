@@ -5,72 +5,77 @@
     <title>On the Dot</title>
     <script type='application/javascript' src="./lib/bundle.js"></script>
   </head>
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
   <link rel='stylesheet' type='text/css' href='css/card.css' />
   <link rel='stylesheet' href='css/font-awesome.min.css'/>
   <body>
     <h1>On the Dot</h1>
-    <section class='top-canvases'>
-      <canvas id='target-canvas'></canvas>
-      <canvas id='stack'></canvas>
-      <div class='stack-buttons'>
-        <button id='clear-stack'>Clear</button>
-        <button id='remove-top'>Remove Top Card</button>
-        <button id='gen-stack'>Go</button>
-      </div>
-    </section>
-
-    <section class='clear-cards'>
-      <div class='clear-card'>
-        <canvas id='canvas-1'></canvas>
-        <div class='buttons'>
-          <button id='rotate-counter1'><i class="fa fa-undo" aria-hidden="true"></i></button>
-          <button id='rotate-clock1'><i class="fa fa-repeat" aria-hidden="true"></i></button>
-          <button id='flip-up1'><i class="fa fa-arrows-v" aria-hidden="true"></i></button>
-          <button id='flip-side1'><i class="fa fa-arrows-h" aria-hidden="true"></i></button>
-          <button id='add1'>
-            <i class="fa fa-plus" aria-hidden="true"></i>
-          </button>
+    <section class='app'>
+      <h2 id='match' class='hidden'>Match</h2>
+      <h2 id='not-match' class='hidden'>Try Again</h2>
+      <section class='top-canvases'>
+        <canvas id='target-canvas'></canvas>
+        <canvas id='stack'></canvas>
+        <div class='stack-buttons'>
+          <button id='clear-stack'>Clear</button>
+          <button id='remove-top'>Remove Top Card</button>
+          <button id='gen-stack'>Go</button>
         </div>
-      </div>
+      </section>
 
-      <div class='clear-card'>
-        <canvas id='canvas-2'></canvas>
-        <div class='buttons'>
-          <button id='rotate-counter2'><i class="fa fa-undo" aria-hidden="true"></i></button>
-          <button id='rotate-clock2'><i class="fa fa-repeat" aria-hidden="true"></i></button>
-          <button id='flip-up2'><i class="fa fa-arrows-v" aria-hidden="true"></i></button>
-          <button id='flip-side2'><i class="fa fa-arrows-h" aria-hidden="true"></i></button>
-          <button id='add2'>
-            <i class="fa fa-plus" aria-hidden="true"></i>
-          </button>
+      <section class='clear-cards'>
+        <div class='clear-card'>
+          <canvas id='canvas-1'></canvas>
+          <div class='buttons'>
+            <button id='rotate-counter1'><i class="fa fa-undo" aria-hidden="true"></i></button>
+            <button id='rotate-clock1'><i class="fa fa-repeat" aria-hidden="true"></i></button>
+            <button id='flip-up1'><i class="fa fa-arrows-v" aria-hidden="true"></i></button>
+            <button id='flip-side1'><i class="fa fa-arrows-h" aria-hidden="true"></i></button>
+            <button id='add1'>
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div class='clear-card'>
-        <canvas id='canvas-3'></canvas>
-        <div class='buttons'>
-          <button id='rotate-counter3'><i class="fa fa-undo" aria-hidden="true"></i></button>
-          <button id='rotate-clock3'><i class="fa fa-repeat" aria-hidden="true"></i></button>
-          <button id='flip-up3'><i class="fa fa-arrows-v" aria-hidden="true"></i></button>
-          <button id='flip-side3'><i class="fa fa-arrows-h" aria-hidden="true"></i></button>
-          <button id='add3'>
-            <i class="fa fa-plus" aria-hidden="true"></i>
-          </button>
+        <div class='clear-card'>
+          <canvas id='canvas-2'></canvas>
+          <div class='buttons'>
+            <button id='rotate-counter2'><i class="fa fa-undo" aria-hidden="true"></i></button>
+            <button id='rotate-clock2'><i class="fa fa-repeat" aria-hidden="true"></i></button>
+            <button id='flip-up2'><i class="fa fa-arrows-v" aria-hidden="true"></i></button>
+            <button id='flip-side2'><i class="fa fa-arrows-h" aria-hidden="true"></i></button>
+            <button id='add2'>
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div class='clear-card'>
-        <canvas id='canvas-4'></canvas>
-        <div class='buttons'>
-          <button id='rotate-counter4'><i class="fa fa-undo" aria-hidden="true"></i></button>
-          <button id='rotate-clock4'><i class="fa fa-repeat" aria-hidden="true"></i></button>
-          <button id='flip-up4'><i class="fa fa-arrows-v" aria-hidden="true"></i></button>
-          <button id='flip-side4'><i class="fa fa-arrows-h" aria-hidden="true"></i></button>
-          <button id='add4'>
-            <i class="fa fa-plus" aria-hidden="true"></i>
-          </button>
+        <div class='clear-card'>
+          <canvas id='canvas-3'></canvas>
+          <div class='buttons'>
+            <button id='rotate-counter3'><i class="fa fa-undo" aria-hidden="true"></i></button>
+            <button id='rotate-clock3'><i class="fa fa-repeat" aria-hidden="true"></i></button>
+            <button id='flip-up3'><i class="fa fa-arrows-v" aria-hidden="true"></i></button>
+            <button id='flip-side3'><i class="fa fa-arrows-h" aria-hidden="true"></i></button>
+            <button id='add3'>
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
-      </div>
+
+        <div class='clear-card'>
+          <canvas id='canvas-4'></canvas>
+          <div class='buttons'>
+            <button id='rotate-counter4'><i class="fa fa-undo" aria-hidden="true"></i></button>
+            <button id='rotate-clock4'><i class="fa fa-repeat" aria-hidden="true"></i></button>
+            <button id='flip-up4'><i class="fa fa-arrows-v" aria-hidden="true"></i></button>
+            <button id='flip-side4'><i class="fa fa-arrows-h" aria-hidden="true"></i></button>
+            <button id='add4'>
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </section>
     </section>
 
   </body>
