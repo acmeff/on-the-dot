@@ -4,13 +4,28 @@ body {
   color: white;
 }
 
-.hidden{
-  display: none;
+header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
 }
 
-.label{
-  /*position: absolute;
-  bottom: 0px;*/
+header div{
+  display: flex;
+  justify-content: space-between;
+}
+
+h1, h2{
+  margin: 0;
+}
+
+#total{
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.hidden{
+  display: none;
 }
 
 
@@ -100,6 +115,7 @@ button:hover + .label{
   justify-content: space-between;
   align-items: center;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .stack-buttons button{
@@ -140,9 +156,9 @@ canvas {
 }
 
 .clock{
-animation-name: clock;
-animation-duration: .20s;
-animation-fill-mode: forwards;
+  animation-name: clock;
+  animation-duration: .20s;
+  animation-fill-mode: forwards;
 }
 
 .counter{
@@ -166,6 +182,7 @@ animation-fill-mode: forwards;
 #stack{
   border: 5px dotted white;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 #target-canvas{
@@ -175,6 +192,7 @@ animation-fill-mode: forwards;
 }
 
 .target-container{
+  padding-top: 50px;
   border-right: 1px solid white;
   padding-bottom: 30px;
 }
