@@ -28,6 +28,8 @@
 
   To generate a random pattern each round, I take each of the statically patterned transparent cards, rotate them and flip them a random number of times, and stack them on top of each other in a random order. The resulting pattern is displayed in the target canvas.
 
+  This random generation allows for infinite game play, if not technically infinite patterns.
+  
 ```javascript
 randomPosition(){
   for (let i = 0; i < Math.floor(Math.random() * 4); i++){
