@@ -26,10 +26,10 @@
 
   On the Dot was built with only `HTML`, `CSS`, and vanilla `JavaScript`. The pattern, stack, and cards are all made with `HTML5 Canvas`.
 
-  To generate a random pattern each round, I take each of the statically patterned transparent cards, rotate them and flip them a random number of times, and stack them on top of each other in a random order. The resulting pattern is displayed in the target canvas.
+  To generate a random pattern each round, I take each of the statically patterned transparent cards and simulate where each of their dots would be if they were rotated and flipped a random number of times. These virtual patterns are stacked on top of each other in a random order, and the resulting pattern is displayed in the "pattern to match" canvas.
 
   This random generation allows for infinite game play, if not technically infinite patterns.
-  
+
 ```javascript
 randomPosition(){
   for (let i = 0; i < Math.floor(Math.random() * 4); i++){
