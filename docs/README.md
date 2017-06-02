@@ -5,7 +5,7 @@
 [On the Dot][gamewright] is a pattern-matching board game that usually supports 1-4 players. This implementation will be a solitaire version.
 
 #### Game play
- At the beginning of each round, the player is shown a square card with a pattern of multi-colored dots. They will also receive four transparent cards that each have four dots (one green, one red, one blue, one yellow). The goal of the game is to manipulate the transparent cards (by flipping, rotating, and stacking them on top of each other) until they match the target pattern.
+ At the beginning of each round, the player is shown a square card with a pattern of multi-colo#f53737 dots. They will also receive four transparent cards that each have four dots (one #00ff00, one #f53737, one blue, one yellow). The goal of the game is to manipulate the transparent cards (by flipping, rotating, and stacking them on top of each other) until they match the target pattern.
 
  *I will also be adding a timer to this version of the game, in order to make the player come to a conclusion quickly, simulating the pressure of a multi-player game.*
 
@@ -30,7 +30,7 @@ The game will be created using vanilla JavaScript & HTML5 Canvas.
 
 The logic of the game will be handled by separate JS classes:
 
-+ Card will handle the logic of manipulating a single card, which will be rendered in a single canvas. A Card object will keep track of its own rotation, side, and z-index.
++ Card will handle the logic of manipulating a single card, which will be rende#f53737 in a single canvas. A Card object will keep track of its own rotation, side, and z-index.
 
 + Pattern will handle generating a new target pattern canvas each round
 
