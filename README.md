@@ -9,15 +9,15 @@
 #### Game play
  At the beginning of each round, the player is shown a square card with a pattern of multi-colored dots.
 
- 
+ ![pattern](./docs/images/pattern.png "Pattern to match")
 
  They will also receive four transparent cards that each have four dots (one red, one green, one purple, one yellow).
 
-
+ ![cards](./docs/images/cards.png "Player's hand")
 
  The goal of the game is to manipulate the transparent cards (by flipping, rotating, and stacking them on top of each other) until they match the target pattern.
 
-
+ ![full game](./docs/images/full-game.png "Pattern to match")
 
 ##Technology
 

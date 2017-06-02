@@ -23,7 +23,7 @@ The finished game will have the following features:
 
 The game will have just one view, which will include the current pattern to match, a display of all four transparent cards in the player's hand (and the buttons to manipulate them), a place to stack those cards, and a nav bar with options to start a new game or pause/resume the timer.
 
-![wireframe](./images/main-wireframe.png "Basic game setup")
+![wireframe](./docs/images/main-wireframe.png "Basic game setup")
 
 ## Structure
 The game will be created using vanilla JavaScript & HTML5 Canvas.
